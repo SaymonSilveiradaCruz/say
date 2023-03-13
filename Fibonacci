@@ -1,3 +1,29 @@
+ Exercicio 1 
+ 
+#include <stdio.h>
+
+int main()
+
+{
+
+int INDICE = 13, SOMA = 0, K = 0;
+
+   while(K < INDICE){
+
+       K = K + 1;
+
+       SOMA = SOMA + K;
+
+   }
+
+   printf("%d",SOMA);
+
+return 0;
+//No fim do processamento desse código o valor da variável SOMA será 91.
+}
+
+
+Exercicio 2
 programa{
   
   funcao inicio(){
@@ -27,4 +53,29 @@ programa{
       }
     }
   }
+}
+
+Exercicio 3
+
+a) 9, b) 128, c) 49, d) 100, e) 13, f) 200.
+
+Exercicio 5
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>  
+     
+main(){
+       char string[50],auxiliar[50];
+       int a,b;
+       printf("Digite a frase que pretendes que invertida: ");
+       gets(string);  
+       b=strlen(string)-1;    
+       for(a=0;string[a]!='\0';a++){        
+       auxiliar[b]=string[a];
+       b--;     
+       }
+       auxiliar[a]='\0';      
+       strcpy(string,auxiliar);    
+       printf("\n\nA frase inversa e:\n%s\n\n",string);
+system("pause");
 }
